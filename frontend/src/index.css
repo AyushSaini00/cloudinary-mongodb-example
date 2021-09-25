@@ -14,6 +14,28 @@ html {
 body {
   line-height: 1.5;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+li {
+  list-style: none;
+  padding: 0.5rem;
+}
+nav ul {
+  padding: 1rem;
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preview-img {
+  margin-top: 3rem;
+  width: 30rem;
+}
+h1 {
+  margin-bottom: 2rem;
 }
 a {
   text-decoration: none;

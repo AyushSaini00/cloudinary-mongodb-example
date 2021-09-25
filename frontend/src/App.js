@@ -1,9 +1,26 @@
-import './App.css';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import Upload from './pages/Upload.js';
+import Home from './pages/Home.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/upload">Upload</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route component={Upload} path="/upload" />
+          <Route component={Home} path="/" />
+        </Switch>
+      </Router>
     </div>
   );
 }
